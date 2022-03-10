@@ -10,4 +10,10 @@ const config = {
 	}
 };
 
+if (process.env.NODE_ENV === 'production') {
+	config.kit.paths = {
+		base: '/hex-colors'
+	};
+}
+
 export default config;
